@@ -1,0 +1,300 @@
+[{
+  "_id": {
+    "$oid": "67e14c112933f06a5c187c92"
+  },
+  "name": "สปาเกตตี้โบโลเนส (Spaghetti Bolognese)",
+  "price": 180,
+  "image": "1742818321986.jpg",
+  "category": "อาหารจานหลัก",
+  "description": "เส้นสปาเกตตี้ราดซอสเนื้อวัวและมะเขือเทศเข้มข้น",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e14d912933f06a5c187cb4"
+  },
+  "name": "ทีรามิสุ (Tiramisu)",
+  "price": 120,
+  "image": "1743766208178.jpg",
+  "category": "อาหารหวาน",
+  "description": "ขนมหวานชั้นเลเยอร์ กาแฟ มาสคาร์โปเน่ และผงโกโก้",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e1808c7fe624e8862de27d"
+  },
+  "name": "ลาเต้ (Caffè Latte)",
+  "price": 60,
+  "image": "1743766882567.jpg",
+  "category": "เครื่องดื่ม",
+  "description": "เอสเปรสโซ่ผสมนมสด หอมละมุน ดื่มง่าย",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67e181287fe624e8862de280"
+  },
+  "name": "เอสเปรสโซ่ (Espresso)",
+  "price": 50,
+  "image": "1743766451294.jpg",
+  "category": "เครื่องดื่ม",
+  "description": "กาแฟช็อตเข้มข้นสไตล์อิตาเลียน",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efbdb1d9845e6b9a14b4bc"
+  },
+  "name": "สปาเกตตีคาร์โบนารา (Spaghetti Carbonara)",
+  "price": 180,
+  "image": "1743764913127.jpg",
+  "category": "อาหารจานหลัก",
+  "description": "สปาเกตตี้กับไข่แดง ชีสพาร์เมซาน เบคอน และพริกไทยดำ",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efbf69d9845e6b9a14b4c2"
+  },
+  "name": "พิซซ่ามาร์การิต้า (Pizza Margherita)",
+  "price": 200,
+  "image": "1743765353741.jpg",
+  "category": "อาหารจานหลัก",
+  "description": "พิซซ่าแป้งบางกรอบ หน้ามะเขือเทศ มอสซาเรลล่าสด และใบโหระพา",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efc128d9845e6b9a14b4c7"
+  },
+  "name": "อินซาลลาต้า มิสต้า (Insalata Mista)",
+  "price": 90,
+  "image": "1743765800401.jpg",
+  "category": "เครื่องเคียง",
+  "description": "สลัดผักรวมกับน้ำสลัดบัลซามิกและน้ำมันมะกอก",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efc247d9845e6b9a14b4ca"
+  },
+  "name": "พาตาเต้ อัล ฟอร์โน่ (Patate al Forno)",
+  "price": 100,
+  "image": "1743766087953.jpg",
+  "category": "เครื่องเคียง",
+  "description": "มันฝรั่งอบกับสมุนไพรอิตาเลียน",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efc8acd9845e6b9a14b4f1"
+  },
+  "name": "เจลาโต (Gelato)",
+  "price": 120,
+  "image": "1743767724305.jpg",
+  "category": "อาหารหวาน",
+  "description": "เจลาโต้ เย็นชื่นใจแบบอิตาเลียนแท้",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efca64d9845e6b9a14b4fa"
+  },
+  "name": "แคนโนลี (Cannoli)",
+  "price": 150,
+  "image": "1743768164214.jpg",
+  "category": "อาหารหวาน",
+  "description": "แป้งกรอบสอดไส้ริคอตต้าชีส หอมหวานตามแบบฉบับซิซิลี",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efcb49d9845e6b9a14b4ff"
+  },
+  "name": "โปรชูตโต เอ เมโลเน่ (Prosciutto e Melone)",
+  "price": 150,
+  "image": "1743768393760.jpg",
+  "category": "อาหารเรียกน้ำย่อย",
+  "description": "พรอสซุตโตแฮมเค็มบาง ๆ เสิร์ฟกับเมลอนหวาน หอม สดชื่น",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efcbf7d9845e6b9a14b504"
+  },
+  "name": "ลาซานญ่า อัลล่า โบโลเนเซ่ (Lasagna alla Bolognese)",
+  "price": 200,
+  "image": "1743768567654.jpg",
+  "category": "อาหารจานหลัก",
+  "description": "ลาซานญ่าเนื้อซอสโบโลเนสและเบชาเมล อบชีสเยิ้ม หอม อร่อย",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efcc93d9845e6b9a14b508"
+  },
+  "name": "Pane all’Aglio",
+  "price": 80,
+  "image": "1743768723697.jpg",
+  "category": "เครื่องเคียง",
+  "description": "ขนมปังกระเทียมอบเนย โรยพาร์เมซานเล็กน้อย กลิ่นหอม กรอบกำลังดี",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efcdb7d9845e6b9a14b50c"
+  },
+  "name": "คาลามารี่ ฟริตติ (Calamari Fritti)",
+  "price": 120,
+  "image": "1743769015016.jpg",
+  "category": "อาหารเรียกน้ำย่อย",
+  "description": "ปลาหมึกชุบแป้งทอด กรอบนอกนุ่มใน",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efcef4d9845e6b9a14b50f"
+  },
+  "name": "เปเปโรนี อาร์โรสตีติ (Peperoni Arrostiti)",
+  "price": 100,
+  "image": "1743769332252.jpg",
+  "category": "เครื่องเคียง",
+  "description": "พริกหวานหลากสีอบนุ่ม คลุกน้ำมันมะกอกและกระเทียม",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efd02ed9845e6b9a14b517"
+  },
+  "name": "เซมิเฟรดโด้ อัล ช็อคโกลาโต้ (Semifreddo al Cioccolato)",
+  "price": 120,
+  "image": "1743769646126.jpg",
+  "category": "อาหารหวาน",
+  "description": "ของหวานกึ่งไอศกรีมรสช็อกโกแลต เข้มข้นและนุ่มลิ้น เสิร์ฟเย็น",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efd496d9845e6b9a14b52a"
+  },
+  "name": "คาปูชิโน่ (Cappuccino)",
+  "price": 50,
+  "image": "1743770774672.jpg",
+  "category": "เครื่องดื่ม",
+  "description": "เอสเปรสโซ่ผสมกับนมร้อนและฟองนมด้านบน",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efd584d9845e6b9a14b531"
+  },
+  "name": "มัคคิอาโต้ (Macchiato)",
+  "price": 50,
+  "image": "1743771012263.jpg",
+  "category": "เครื่องดื่ม",
+  "description": "เอสเปรสโซ่หยดฟองนมนิดเดียวด้านบน พร้อมคาราเมล",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efd696d9845e6b9a14b539"
+  },
+  "name": "เชเคราโต้ (Shakerato)",
+  "price": 70,
+  "image": "1743771286085.jpg",
+  "category": "เครื่องดื่ม",
+  "description": "เอสเปรสโซ่เย็นที่เขย่ากับน้ำแข็งในเชคเกอร์ หอม เย็น สดชื่น",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efdd3fd9845e6b9a14b53d"
+  },
+  "name": "พานาค็อตต้า (Panna Cotta)",
+  "price": 60,
+  "image": "1743772991437.jpg",
+  "category": "อาหารหวาน",
+  "description": "พุดดิ้งครีมวานิลลาเนื้อเนียนนุ่ม เสิร์ฟกับซอสผลไม้หรือคาราเมล หวานละมุน",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efde6fd9845e6b9a14b542"
+  },
+  "name": "โฟกัชเซีย (Focaccia Bread)",
+  "price": 60,
+  "image": "1743773295324.jpg",
+  "category": "เครื่องเคียง",
+  "description": "ขนมปังอบแผ่นหนา โรยเกลือหยาบ น้ำมันมะกอก โรสแมรี่",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efdf73d9845e6b9a14b54b"
+  },
+  "name": "ไก่สตูว์สไตล์นักล่า (ollo alla Cacciatora)",
+  "price": 200,
+  "image": "1743773555538.jpg",
+  "category": "อาหารจานหลัก",
+  "description": "ไก่ตุ๋นกับมะเขือเทศ ไวน์แดง กระเทียม และสมุนไพร กลิ่นหอมเข้มข้น",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67efe069d9845e6b9a14b54e"
+  },
+  "name": "ข้าวปั้นทอด (Arancini)",
+  "price": 90,
+  "image": "1743773801309.jpg",
+  "category": "อาหารเรียกน้ำย่อย",
+  "description": "ข้าวรีซอตโต้ปั้นเป็นลูกกลม สอดไส้ชีสหรือเนื้อซอส แล้วนำไปทอด กรอบนอก นุ่มใน",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f00c633b4b7cd1dcc77bbc"
+  },
+  "name": "สลัดคาเปรเซ่ (Caprese Salad)",
+  "price": 90,
+  "image": "1743785059457.jpg",
+  "category": "อาหารเรียกน้ำย่อย",
+  "description": "มะเขือเทศสด มอซซาเรลล่าชีสสด ใบโหระพา ราดด้วยน้ำมันมะกอก",
+  "status": "Active",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f0112880baa32dbd3ef00e"
+  },
+  "name": "คาโปนาต้า (Caponata)",
+  "price": 100,
+  "image": "1743786280552.jpg",
+  "category": "อาหารเรียกน้ำย่อย",
+  "description": "สตูว์ผัก",
+  "status": "Active",
+  "__v": 0
+}]
