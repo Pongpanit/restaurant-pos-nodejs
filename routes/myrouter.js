@@ -145,8 +145,19 @@ router.get('/order', async (req, res) => {
 
 // รับข้อมูลการสั่งซื้อจากฟอร์ม แล้วบันทึกลง DB
 router.post('/submit-order', async (req, res) => {
-    const menuIds = req.body.menuIds;
-    const quantities = req.body.quantities;
+    // แก้ไขตรงนี้: ตรวจสอบว่าเป็น Array หรือไม่ ถ้าไม่ใช่ให้ทำให้เป็น Array
+    let menuIds = req.body.menuIds;
+    let quantities = req.body.quantities;
+
+    if (!menuIds) {
+        return res.status(400).send("กรุณาเลือกอย่างน้อย 1 เมนู");
+    }
+
+    // ถ้าส่งมาค่าเดียวมันจะเป็น String ให้เปลี่ยนเป็น Array
+    if (!Array.isArray(menuIds)) {
+        menuIds = [menuIds];
+        quantities = [quantities];
+    }
 
     const validItems = menuIds.map((menuId, index) => {
         const quantity = parseInt(quantities[index]);
@@ -156,7 +167,12 @@ router.post('/submit-order', async (req, res) => {
         return null;
     }).filter(item => item !== null);
 
+    // ... ส่วนที่เหลือของโค้ดคงเดิม ...
     try {
+        if (validItems.length === 0) {
+            return res.status(400).send("จำนวนสินค้าต้องมากกว่า 0");
+        }
+        
         const menus = await Menu.find({ '_id': { $in: validItems.map(item => item.menuId) } });
 
         const items = validItems.map(item => {
@@ -175,7 +191,6 @@ router.post('/submit-order', async (req, res) => {
         });
 
         await newOrder.save();
-
         res.redirect('/history');
     } catch (error) {
         res.status(500).json({ message: "Server Error", error: error.message });
