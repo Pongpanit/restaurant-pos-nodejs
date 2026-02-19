@@ -12,4 +12,3 @@ A web-based Point of Sale (POS) system designed to manage restaurant operations,
 * **Backend:** Node.js, Express.js
 * **Database:** MongoDB, Mongoose
 * **Frontend:** EJS, Bootstrap 5
-* **Tools:** VS Code, Git
