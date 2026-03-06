@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Menu</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<style>
+    .dark-mode {
+        background-color: #121212 !important;
+        color: #f1f1f1 !important;
+    }
+
+    .dark-mode .navbar {
+        background-color: #1f1f1f !important;
+    }
+
+    .dark-mode .navbar .nav-link {
+        color: #ffffff !important;
+    }
+
+    .dark-mode .navbar .nav-link:hover {
+        color: #0d6efd !important;
+    }
+
+    .dark-mode .search-form {
+        background-color: #1e1e1e;
+        color: white;
+        border: 1px solid #333;
+    }
+
+    .dark-mode .card {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border: 1px solid #2a2a2a;
+    }
+
+    .dark-mode .card a {
+        color: #ffffff;
+    }
+
+    .dark-mode .card a:hover {
+        color: #0d6efd;
+    }
+
+    .dark-mode select,
+    .dark-mode input {
+        background-color: #2a2a2a;
+        color: white;
+        border: 1px solid #555;
+    }
+
+    .dark-mode .form-control::placeholder {
+        color: #bbbbbb;
+    }
+
+    .dark-mode .category-header {
+        color: #ffffff;
+        border-bottom: 2px solid #0d6efd;
+    }
+
+    .dark-mode .dropdown-menu {
+        background-color: #2a2a2a;
+        color: #ffffff;
+    }
+
+    .dark-mode .dropdown-item {
+        color: #ffffff;
+    }
+
+    .dark-mode .dropdown-item:hover {
+        background-color: #343a40;
+        color: #0d6efd;
+    }
+</style>
+
+<body>
+    <nav class="shadow-sm navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a href="/" class="navbar-brand d-flex align-items-center">
+                <img src="images/home/logo.png" alt="Logo" style="height: 70px;" class="me-2">
+                <span class="fw-bold">MyMenu</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" href="/manage">จัดการเมนู</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" href="/form">บันทึกเมนู</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-light text-uppercase fw-bold px-3 dropdown-toggle" href="#"
+                            id="orderDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            จัดการออเดอร์
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="orderDropdown">
+                            <li><a class="dropdown-item" href="/order">คำสั่งออเดอร์</a></li>
+                            <li><a class="dropdown-item" href="/history">ประวัติออเดอร์</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-3">
+                        <button id="theme-toggle" class="btn btn-outline-light btn-sm" title="Toggle Theme">
+                            <i class="fas fa-moon" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+            document.getElementById("theme-icon").classList.remove("fa-moon");
+            document.getElementById("theme-icon").classList.add("fa-sun");
+        }
+
+        // ฟังก์ชันเปลี่ยนธีม
+        document.getElementById("theme-toggle").addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+
+            const icon = document.getElementById("theme-icon");
+            if (document.body.classList.contains("dark-mode")) {
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+                localStorage.setItem("theme", "dark");
+            } else {
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+                localStorage.setItem("theme", "light");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
